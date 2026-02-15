@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Software_Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>LCD_Interfaces</Name>
+  <Identifier>0780df38-bc21-4263-bd89-22172dbea387</Identifier>
+  <Description />
+  <Packages_References>
+    <Package_Reference>
+      <Last_Known_Name>LCD_Interfaces</Last_Known_Name>
+      <Relative_Path>LCD_Interfaces.pkgx</Relative_Path>
+      <Is_Writable>true</Is_Writable>
+    </Package_Reference>
+  </Packages_References>
+</Software_Project>

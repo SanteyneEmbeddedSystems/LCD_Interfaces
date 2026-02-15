@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Top_Level_Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>LCD_Interfaces</Name>
+  <Identifier>f2b4fcd3-0fb7-4c2e-bb3f-cd438fdee657</Identifier>
+  <Description>Gathers interfaces allowing to manage a LCD.</Description>
+  <Packages />
+  <Types />
+  <Interfaces>
+    <Client_Server_Interface>
+      <Name>LCD_Commands</Name>
+      <Identifier>bba1b84b-c4db-44c7-bf9c-e375a85908a7</Identifier>
+      <Description>Gathers operations allowing to command a LCD.</Description>
+      <Operations>
+        <Client_Server_Operation>
+          <Name>Set_Cursor_Position</Name>
+          <Identifier>b92c33ae-45cb-4cb2-8110-b14373853f70</Identifier>
+          <Description />
+          <Parameters>
+            <Operation_Parameter>
+              <Name>line_index</Name>
+              <Identifier>44eb412d-12ae-483f-abfe-65056097180d</Identifier>
+              <Description />
+              <Referenced_Type_Id>058963e7-375f-4f57-aceb-5a2f36b75490</Referenced_Type_Id>
+              <Direction>INPUT</Direction>
+            </Operation_Parameter>
+            <Operation_Parameter>
+              <Name>column_index</Name>
+              <Identifier>fab4cdd5-be29-454e-8603-a6518959dcef</Identifier>
+              <Description />
+              <Referenced_Type_Id>058963e7-375f-4f57-aceb-5a2f36b75490</Referenced_Type_Id>
+              <Direction>INPUT</Direction>
+            </Operation_Parameter>
+          </Parameters>
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Print</Name>
+          <Identifier>83f13af1-15fc-4d7a-af41-b26d4703f9f2</Identifier>
+          <Description />
+          <Parameters>
+            <Operation_Parameter>
+              <Name>text</Name>
+              <Identifier>4112817b-990f-4d8e-80ed-5c4915d2baa2</Identifier>
+              <Description />
+              <Referenced_Type_Id>573d6c92-f0f8-4fb0-8530-7a37cf4ed0ac</Referenced_Type_Id>
+              <Direction>INPUT</Direction>
+            </Operation_Parameter>
+          </Parameters>
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Print_Special_Character</Name>
+          <Identifier>d09cb3b4-1338-488f-9ae9-c33463d162f1</Identifier>
+          <Description />
+          <Parameters>
+            <Operation_Parameter>
+              <Name>special_character_idx</Name>
+              <Identifier>8e90f273-0ed1-44c8-b30e-c6b725b0f046</Identifier>
+              <Description />
+              <Referenced_Type_Id>058963e7-375f-4f57-aceb-5a2f36b75490</Referenced_Type_Id>
+              <Direction>INPUT</Direction>
+            </Operation_Parameter>
+          </Parameters>
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Hide_Cursor</Name>
+          <Identifier>a8142949-480d-4873-951b-90d53ffd83b9</Identifier>
+          <Description />
+          <Parameters />
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Show_Cursor</Name>
+          <Identifier>cf3088c4-1c29-45a8-910d-830acf95bea2</Identifier>
+          <Description />
+          <Parameters />
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Blink_Cursor</Name>
+          <Identifier>d0f42b22-c7e3-442c-b672-3411af8544a8</Identifier>
+          <Description />
+          <Parameters />
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>No_Blink_Cursor</Name>
+          <Identifier>a04d935e-838c-4036-8f5a-63fc10a07715</Identifier>
+          <Description />
+          <Parameters />
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Hide_Text</Name>
+          <Identifier>269ad85a-b62c-4db6-bc8d-e273a4e70a9f</Identifier>
+          <Description />
+          <Parameters />
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Show_Text</Name>
+          <Identifier>07df9961-8665-45a8-9d29-09a49ee677c2</Identifier>
+          <Description />
+          <Parameters />
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Clear_Text</Name>
+          <Identifier>8a5bc8c4-3bfa-440e-8931-4ee406a7c7f7</Identifier>
+          <Description />
+          <Parameters />
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Turn_Off_Backlight</Name>
+          <Identifier>75974c7d-ab18-4a92-a602-dd94910fc6b2</Identifier>
+          <Description />
+          <Parameters />
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Turn_On_Backlight</Name>
+          <Identifier>36add08c-fdd9-4d7f-95e4-2ee549c9e8ec</Identifier>
+          <Description />
+          <Parameters />
+        </Client_Server_Operation>
+      </Operations>
+    </Client_Server_Interface>
+    <Client_Server_Interface>
+      <Name>LCD_Special_Character_Config</Name>
+      <Identifier>aef4ccae-9bc5-4e63-bcdf-149edb15a2f0</Identifier>
+      <Description />
+      <Operations>
+        <Client_Server_Operation>
+          <Name>Create_Character</Name>
+          <Identifier>4bb8822f-fe41-4dce-8565-c79d9f775736</Identifier>
+          <Description />
+          <Parameters>
+            <Operation_Parameter>
+              <Name>special_character_id</Name>
+              <Identifier>a698a6bc-668f-4df0-97e3-f99e3f0bf2f7</Identifier>
+              <Description />
+              <Referenced_Type_Id>058963e7-375f-4f57-aceb-5a2f36b75490</Referenced_Type_Id>
+              <Direction>INPUT</Direction>
+            </Operation_Parameter>
+            <Operation_Parameter>
+              <Name>char_map</Name>
+              <Identifier>637d6d06-3c09-42b9-86ec-b40d4f25a91c</Identifier>
+              <Description />
+              <Referenced_Type_Id>00000000-0000-0000-0000-000000000000</Referenced_Type_Id>
+              <Direction>INPUT</Direction>
+            </Operation_Parameter>
+          </Parameters>
+        </Client_Server_Operation>
+      </Operations>
+    </Client_Server_Interface>
+  </Interfaces>
+  <Component_Types />
+  <Compositions />
+</Top_Level_Package>
